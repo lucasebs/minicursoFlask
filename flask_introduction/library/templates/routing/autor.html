@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Autor - {{ autor.nome_completo }}</title>
+    </head>
+    <body>
+        <h1>{{ autor.nome_completo }}</h1>
+        <ul>
+          <li><strong>Data de Nascimento:</strong> {{ autor.data_de_nascimento }}</li>
+          <li><strong>Nacionalidade:</strong> {{ autor.nacionalidade }}</li>
+          <li><strong>Principal Livro:</strong> {{ autor.principal_livro }}</li>
+        </ul>
+        <div><img src="{{ autor.foto }}" alt="{{ autor.nome_completo }}" width="300px"></div>
+
+        <p><a href="{{ url_for('autores') }}">Voltar para os Autores</a></p>
+    </body>
+</html>

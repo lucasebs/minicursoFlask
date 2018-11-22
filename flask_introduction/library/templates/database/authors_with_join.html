@@ -1,0 +1,8 @@
+<html>
+    <h1>Lista de Autores - Join:</h1>
+    <ul>
+        {% for a in authors %}
+        <li>{{a['id']}}: {{a['name']}} (from {{a['country']}})</li>
+        {% endfor %}
+    </ul>
+</html>
